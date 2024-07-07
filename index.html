@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e478379d5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav><img src="img/logoFINAL.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <H1>Hi, I'm <span>Sparsh</span> Gupta</H1>
+            </div>
+            <div class="video">
+                
+            </div>
+        </div>
+    </div>
+    <!--------------ABOUT-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/about1.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class ="sub-title">ABOUT ME</h1>
+                    <p> Inquisitive, creative computer science engineer with a strong foundation in software and DevSecOps engineering 
+                        and programming principles. My journey in software development began with a fascination for solving real-world 
+                        problems through code, and it has since evolved into a career where I thrive on tackling challenges and continuously learning.</br>
+                    </br>
+                        When Hansom Robotics unveiled SOPHIA, A humanoid Robot in 2016, the entire world stood up to take notice of this 
+                        momentous feat of Engineering. As a 14-year-old, I was baffled by the sheer ingenuity involved in building a 
+                        humanoid robot that was capable of duplicating human dexterity. While people were still talking about the ‘what’ of it, 
+                        I was intrigued towards ‘how’ of it.</br> Thus, I dived head first into this multidisciplinary field of Computer Science and 
+                        Artificial Intelligence with a desire to one day contribute to its biggest achievements. </br>
+                    </br>
+                        Beyond coding, I am driven by 
+                        the impact my work can have on users and businesses. Whether it’s improving user experiences, optimizing processes, or contributing 
+                        to a larger mission, I believe in creating meaningful outcomes through technology. </br>
+                </br>
+                Let’s connect! Whether you're looking to discuss technology trends, explore potential collaborations, or simply share insights, 
+                feel free to reach out. I look forward to connecting with you!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><BR>Designing Web Interface</li>
+                            <li><span>Languages Known</span><BR>JAVA, PYTHON, HTML5, CSS3, JAVASCRIPT, MySQL</li>
+                            <li><span>Soft Skills</span><BR>Analytical Thinking, Problem-Solving, Time-Management
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Summer Training</span><BR>From Infosys on AI/ML</li>
+                            <li><span> Virtual Internship</span><BR>From YHills</li>
+                            <li><span> Job Simulation</span><BR>From Deloitte Australia</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Current</span><BR>Bachelor's in Computer Science from DIT UNIVERSITY</li>
+                            <li><span>2019 - 2021</span><BR>Senior Secondary School of Education
+                            </li>
+                            <li><span>2017 - 2019</span><BR>Higher School of Education
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <!--------------SEVICES-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">MY SERVICES</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <P>Implemented responsive design principles for web applications.
+                        Experienced in front-end development with HTML, CSS, and JavaScript.
+                        Basic knowledge of back-end development using Node.js.</P>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>AI/ML</h2>
+                    <P>Jupyter Notebooks for data exploration and model development.
+                        scikit-learn for machine learning algorithms in Python.
+                        TensorFlow and PyTorch for deep learning</P>
+        
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-blogger-b"></i>
+                    <h2>Blog</h2>
+                    <p>Content Creation:
+
+                        Informative Articles, How-To Guides, Opinion Pieces.
+                        Educational Resources:
+
+                        Online Courses, Workshops, E-books.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------certificates-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/deloitte.jpeg">
+                    <div class="layer">
+                        <h3>Technology Job Simulation</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/accenture.jpeg">
+                    <div class="layer">
+                        <h3>Developer Job Simulation</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/guvi-python.png">
+                    <div class="layer">
+                        <h3>Python</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/infosys_AI.jpeg">
+                    <div class="layer">
+                        <h3>Artificial Intelligence</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/coursera_DL.jpeg">
+                    <div class="layer">
+                        <h3>JP Deep Learning</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/coursera_DS.jpeg">
+                    <div class="layer">
+                        <h3>Data Science</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/coursera_entre.jpeg">
+                    <div class="layer">
+                        <h3>Entrepreneurship</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!----contact---->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">CONTACT ME</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sparsh12mar@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="http://linkedin.com/in/sparshtf"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://x.com/Maahihihi?t=IMhKRN4ZDAIWxhE_9FdaAA&s=09"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="img/Sparsh's Resume.pdf" class="btn btn2">DOWNLOAD CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright<i class="fa-regular fa-copyright"></i> Made by Sparsh Gupta<i class="fa-regular fa-heart"></i>
+            </p>
+        </div>
+    </div>
+
+
+
+    
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemeu.style.left = "0";
+        }
+        function closemenu() {
+            sidemeu.style.left = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyBTBvlJS6P74lf1VH9lSIVoggodtZ-TCghfouJQWDVFPtKGK8YfJPDPSb4NlaEc3wo/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
